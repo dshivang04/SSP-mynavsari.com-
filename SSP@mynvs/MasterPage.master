@@ -1,0 +1,154 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="MasterPage2, App_Web_mwtarc5i" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Orange Hospital</title>
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="We Care Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	Smartphone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //Custom Theme files -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ'
+        crossorigin='anonymous'>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <!-- js -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!-- //js -->
+    <!-- start-smooth-scrolling-->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <!--//end-smooth-scrolling-->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <!--header-->
+            <div class="header">
+                <nav class="navbar navbar-default">
+                    <div class="container">
+                        
+                        <!--navigation-->
+                        <div class="header-text navbar-left">
+                            <p>
+                                <p>
+                        </div>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="header-right">
+                            <div class="top-nav-text">
+                                <div class="header-right">
+                                    <ul>
+                                        <li><span><%= DateTime.Now.ToString("dddd, MMMM dd, yyyy") %></span></li>
+                                        <li>
+                                            <ul class="social-icons">
+                                                <li class='fab fa-facebook-f' style='font-size: 24px; color: navy'></li>
+                                                &nbsp;&nbsp;
+                                    <li class='fab fa-instagram' style='font-size: 24px; color: blue'></li>
+                                                &nbsp;&nbsp;
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+
+            <div class="header">
+                <nav class="navbar navbar-default">
+                    <div class="collapse navbar-collapse navbar-default" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li class="link link--yaku"><a href="http://mynavsari.com/"><span>H</span><span>o</span><span>m</span><span>e</span></a></li>
+                            <li class="link link--yaku"><a href="Registration.aspx"><span>R</span><span>e</span><span>g</span><span>i</span><span>s</span><span>t</span><span>r</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span><span></span></a></li>
+                            <li class="link link--yaku"><a href="serviceprovider.aspx"><span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span> <span>P</span><span>r</span><span>o</span><span>v</span><span>i</span><span>d</span><span>e</span><span>r</span></a></li>
+                            <li class="link link--yaku"><a href="services.aspx"><span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span></a></li>
+                            <li class="link link--yaku"><a href="volunteer.aspx"><span>V</span><span>o</span><span>l</span><span>u</span><span>n</span><span>t</span><span>e</span><span>e</span><span>r</span><span>&nbsp</span><span>R</span><span>e</span><span>g</span><span>i</span><span>s</span><span>t</span><span>r</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span><span></span></a></li>
+                            <li class="link link--yaku"><a href="volservices.aspx"><span>V</span><span>o</span><span>l</span><span>u</span><span>n</span><span>t</span><span>e</span><span>e</span><span>r</span><span>&nbsp</span><span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span></a></li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!--//header-->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <!-- Footer Start -->
+            <div class="footer">
+                <div class="container py-3">
+                    <div class="row g-5">
+                        <div class="col-lg-5 col-md-6">
+                            <h4 class="d-inline-block text-uppercase border-bottom border-5 border-secondary mb-4" style="color: #f4811e;">About Us </h4>
+                            <p class="m-0" align="justify" style="color: #fff; font-size: 18px">
+                                <br />
+                                Navsari is a city, the 9th biggest municipality of Gujarat and the administrative headquarters Navsari District of Gujarat, India, located between Surat & Mumbai. Navsari is also the Twin City of Surat and only 30 km south of Surat.
+                            </p>
+                        </div>
+                       
+                        <div class="col-lg-2 col-md-6">
+                            <h4 class="d-inline-block  text-uppercase border-bottom border-5 border-secondary mb-4" style="color: #f4811e;">Quick Links</h4>
+                            <div class="d-flex flex-column justify-content-start">
+                                <br />
+                                <a class="mb-2" style="color: #fff; font-size: 18px" href="http://mynavsari.com/"><i class="fa fa-angle-double-right me-2"></i>&nbsp; Home</a><br />
+                                <a class="mb-2" style="color: #fff; font-size: 18px" href="Registration.aspx"><i class="fa fa-angle-double-right me-2"></i>&nbsp; Registration</a><br />
+                                <a class="mb-2" style="color: #fff; font-size: 18px" href="Services.aspx"><i class="fa fa-angle-double-right me-2"></i>&nbsp; Services</a><br />
+                                <a class="mb-2" style="color: #fff; font-size: 18px" href="serviceprovider.aspx"><i class="fa fa-angle-double-right me-2"></i>&nbsp; Service Provider</a><br />
+                                <a class="mb-2" style="color: #fff; font-size: 18px" href="Volunteer.aspx"><i class="fa fa-angle-double-right me-2"></i>&nbsp; Volunteer Registration</a><br />
+                                <a class="mb-2" style="color: #fff; font-size: 18px" href="volservices.aspx"><i class="fa fa-angle-double-right me-2"></i>&nbsp; Volunteer Services</a><br />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="py-4">
+                <div class="container">
+                    <div class="row g-5">
+                        <div class="col-md-12 text-left ">
+                            <br />
+                            <b>
+                                <p class="mb-md-0" style="font-size: 16px">
+                                    &copy; <a href="#" style="color: #f4811e; font-size: 16px">Copyright © 2023 . All rights reserved..</a>. 
+						            <a target="_blank" href="http://www.synergyforit.com/" style="color: #f4811e">Synergy</a>
+                                </p>
+                            </b>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $().UItoTop({ easingType: 'easeOutQuart' });
+                });
+            </script>
+            <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+            <script src="js/bootstrap.js"></script>
+        </div>
+    </form>
+</body>
+</html>
